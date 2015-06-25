@@ -30,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C17AFF341B3C4CF200973F6C /* UIViewFrameSize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewFrameSize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C17AFF341B3C4CF200973F6C /* MEViewExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEViewExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17AFF381B3C4CF200973F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C17AFF391B3C4CF200973F6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C17AFF491B3C4CF200973F6C /* UIViewFrameSizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIViewFrameSizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,8 +63,8 @@
 		C17AFF2B1B3C4CF200973F6C = {
 			isa = PBXGroup;
 			children = (
-				C17AFF361B3C4CF200973F6C /* UIViewFrameSize */,
-				C17AFF4C1B3C4CF200973F6C /* UIViewFrameSizeTests */,
+				C17AFF361B3C4CF200973F6C /* MEViewExtensionsSize */,
+				C17AFF4C1B3C4CF200973F6C /* MEViewExtensionsTests */,
 				C17AFF351B3C4CF200973F6C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,13 +72,13 @@
 		C17AFF351B3C4CF200973F6C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C17AFF341B3C4CF200973F6C /* UIViewFrameSize.app */,
+				C17AFF341B3C4CF200973F6C /* MEViewExtensions.app */,
 				C17AFF491B3C4CF200973F6C /* UIViewFrameSizeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C17AFF361B3C4CF200973F6C /* UIViewFrameSize */ = {
+		C17AFF361B3C4CF200973F6C /* MEViewExtensionsSize */ = {
 			isa = PBXGroup;
 			children = (
 				C17AFF391B3C4CF200973F6C /* AppDelegate.swift */,
@@ -88,7 +88,8 @@
 				C17AFF5F1B3C4D3C00973F6C /* UIViewController.swift */,
 				C17AFF371B3C4CF200973F6C /* Supporting Files */,
 			);
-			path = UIViewFrameSize;
+			name = MEViewExtensionsSize;
+			path = MEViewExtensions;
 			sourceTree = "<group>";
 		};
 		C17AFF371B3C4CF200973F6C /* Supporting Files */ = {
@@ -99,13 +100,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C17AFF4C1B3C4CF200973F6C /* UIViewFrameSizeTests */ = {
+		C17AFF4C1B3C4CF200973F6C /* MEViewExtensionsTests */ = {
 			isa = PBXGroup;
 			children = (
 				C17AFF6E1B3C4E9A00973F6C /* UIViewTests.swift */,
 				C17AFF4D1B3C4CF200973F6C /* Supporting Files */,
 			);
-			path = UIViewFrameSizeTests;
+			path = MEViewExtensionsTests;
 			sourceTree = "<group>";
 		};
 		C17AFF4D1B3C4CF200973F6C /* Supporting Files */ = {
@@ -119,9 +120,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C17AFF331B3C4CF200973F6C /* UIViewFrameSize */ = {
+		C17AFF331B3C4CF200973F6C /* MEViewExtensions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C17AFF531B3C4CF200973F6C /* Build configuration list for PBXNativeTarget "UIViewFrameSize" */;
+			buildConfigurationList = C17AFF531B3C4CF200973F6C /* Build configuration list for PBXNativeTarget "MEViewExtensions" */;
 			buildPhases = (
 				C17AFF301B3C4CF200973F6C /* Sources */,
 				C17AFF311B3C4CF200973F6C /* Frameworks */,
@@ -131,9 +132,9 @@
 			);
 			dependencies = (
 			);
-			name = UIViewFrameSize;
+			name = MEViewExtensions;
 			productName = UIViewFrameSize;
-			productReference = C17AFF341B3C4CF200973F6C /* UIViewFrameSize.app */;
+			productReference = C17AFF341B3C4CF200973F6C /* MEViewExtensions.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C17AFF481B3C4CF200973F6C /* UIViewFrameSizeTests */ = {
@@ -172,7 +173,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C17AFF2F1B3C4CF200973F6C /* Build configuration list for PBXProject "UIViewFrameSize" */;
+			buildConfigurationList = C17AFF2F1B3C4CF200973F6C /* Build configuration list for PBXProject "MEViewExtensions" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -185,7 +186,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C17AFF331B3C4CF200973F6C /* UIViewFrameSize */,
+				C17AFF331B3C4CF200973F6C /* MEViewExtensions */,
 				C17AFF481B3C4CF200973F6C /* UIViewFrameSizeTests */,
 			);
 		};
@@ -238,7 +239,7 @@
 /* Begin PBXTargetDependency section */
 		C17AFF4B1B3C4CF200973F6C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C17AFF331B3C4CF200973F6C /* UIViewFrameSize */;
+			target = C17AFF331B3C4CF200973F6C /* MEViewExtensions */;
 			targetProxy = C17AFF4A1B3C4CF200973F6C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -328,18 +329,20 @@
 		C17AFF541B3C4CF200973F6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = UIViewFrameSize/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MEViewExtensions/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C17AFF551B3C4CF200973F6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = UIViewFrameSize/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MEViewExtensions/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -355,10 +358,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = UIViewFrameSizeTests/Info.plist;
+				INFOPLIST_FILE = MEViewExtensionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIViewFrameSize.app/UIViewFrameSize";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MEViewExtensions.app/MEViewExtensions";
 			};
 			name = Debug;
 		};
@@ -370,17 +373,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = UIViewFrameSizeTests/Info.plist;
+				INFOPLIST_FILE = MEViewExtensionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIViewFrameSize.app/UIViewFrameSize";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MEViewExtensions.app/MEViewExtensions";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C17AFF2F1B3C4CF200973F6C /* Build configuration list for PBXProject "UIViewFrameSize" */ = {
+		C17AFF2F1B3C4CF200973F6C /* Build configuration list for PBXProject "MEViewExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C17AFF511B3C4CF200973F6C /* Debug */,
@@ -389,7 +392,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C17AFF531B3C4CF200973F6C /* Build configuration list for PBXNativeTarget "UIViewFrameSize" */ = {
+		C17AFF531B3C4CF200973F6C /* Build configuration list for PBXNativeTarget "MEViewExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C17AFF541B3C4CF200973F6C /* Debug */,
