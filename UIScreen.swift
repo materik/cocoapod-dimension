@@ -9,7 +9,8 @@
 import UIKit
 
 public extension UIScreen {
-
+    
+    class var size: CGSize { return CGSize(width: UIScreen.w, height: UIScreen.h) }
     class var w: CGFloat { return UIScreen.mainScreen().bounds.width }
     class var h: CGFloat { return UIScreen.mainScreen().bounds.height }
     
