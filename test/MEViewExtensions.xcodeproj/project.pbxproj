@@ -60,7 +60,7 @@
 		C17AFF2B1B3C4CF200973F6C = {
 			isa = PBXGroup;
 			children = (
-				C17AFF361B3C4CF200973F6C /* MEViewExtensionsSize */,
+				C17AFF361B3C4CF200973F6C /* MEViewExtensions */,
 				C17AFF4C1B3C4CF200973F6C /* MEViewExtensionsTests */,
 				C17AFF351B3C4CF200973F6C /* Products */,
 			);
@@ -75,7 +75,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C17AFF361B3C4CF200973F6C /* MEViewExtensionsSize */ = {
+		C17AFF361B3C4CF200973F6C /* MEViewExtensions */ = {
 			isa = PBXGroup;
 			children = (
 				C17AFF391B3C4CF200973F6C /* AppDelegate.swift */,
@@ -84,7 +84,6 @@
 				C17AFF5E1B3C4D3C00973F6C /* UIView.swift */,
 				C17AFF371B3C4CF200973F6C /* Supporting Files */,
 			);
-			name = MEViewExtensionsSize;
 			path = MEViewExtensions;
 			sourceTree = "<group>";
 		};
