@@ -48,8 +48,24 @@ class UIViewTests: XCTestCase {
     }
 
     // MARK: width
-
+    
     func testGetWidth() {
+        let view1 = UIView()
+        XCTAssertEqual(view1.frame.size.width, view1.width)
+        XCTAssertEqual(view1.width, 0)
+        let view2 = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
+        XCTAssertEqual(view2.frame.size.width, view2.width)
+        XCTAssertEqual(view2.width, 10)
+    }
+    
+    func testSetWidth() {
+        let view1 = UIView()
+        view1.width = 10
+        XCTAssertEqual(view1.frame.size.width, view1.width)
+        XCTAssertEqual(view1.width, 10)
+    }
+    
+    func testGetW() {
         let view1 = UIView()
         XCTAssertEqual(view1.frame.size.width, view1.w)
         XCTAssertEqual(view1.w, 0)
@@ -57,8 +73,8 @@ class UIViewTests: XCTestCase {
         XCTAssertEqual(view2.frame.size.width, view2.w)
         XCTAssertEqual(view2.w, 10)
     }
-
-    func testSetWidth() {
+    
+    func testSetW() {
         let view1 = UIView()
         view1.w = 10
         XCTAssertEqual(view1.frame.size.width, view1.w)
@@ -66,8 +82,24 @@ class UIViewTests: XCTestCase {
     }
 
     // MARK: height
-
+    
     func testGetHeight() {
+        let view1 = UIView()
+        XCTAssertEqual(view1.frame.size.height, view1.height)
+        XCTAssertEqual(view1.height, 0)
+        let view2 = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 10))
+        XCTAssertEqual(view2.frame.size.height, view2.height)
+        XCTAssertEqual(view2.height, 10)
+    }
+    
+    func testSetHeight() {
+        let view1 = UIView()
+        view1.height = 10
+        XCTAssertEqual(view1.frame.size.height, view1.height)
+        XCTAssertEqual(view1.height, 10)
+    }
+    
+    func testGetH() {
         let view1 = UIView()
         XCTAssertEqual(view1.frame.size.height, view1.h)
         XCTAssertEqual(view1.h, 0)
@@ -75,8 +107,8 @@ class UIViewTests: XCTestCase {
         XCTAssertEqual(view2.frame.size.height, view2.h)
         XCTAssertEqual(view2.h, 10)
     }
-
-    func testSetHeight() {
+    
+    func testSetH() {
         let view1 = UIView()
         view1.h = 10
         XCTAssertEqual(view1.frame.size.height, view1.h)
