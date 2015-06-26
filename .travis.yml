@@ -3,4 +3,4 @@ before_install:
   - brew update
   - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 script:
-  - xctool test -project test/MEViewExtensions.xcodeproj -scheme MEViewExtensions -sdk iphonesimulator
+  - xctool test -project test/MEViewExtensions.xcodeproj -scheme MEViewExtensionsTests -sdk iphonesimulator

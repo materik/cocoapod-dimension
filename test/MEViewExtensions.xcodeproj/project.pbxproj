@@ -23,7 +23,7 @@
 			containerPortal = C17AFF2C1B3C4CF200973F6C /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C17AFF331B3C4CF200973F6C;
-			remoteInfo = UIViewFrameSize;
+			remoteInfo = MEViewExtensions;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -31,7 +31,7 @@
 		C17AFF341B3C4CF200973F6C /* MEViewExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEViewExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17AFF381B3C4CF200973F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C17AFF391B3C4CF200973F6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C17AFF491B3C4CF200973F6C /* UIViewFrameSizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIViewFrameSizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C17AFF491B3C4CF200973F6C /* MEViewExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEViewExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17AFF4E1B3C4CF200973F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C17AFF5C1B3C4D3C00973F6C /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageView.swift; path = ../../UIImageView.swift; sourceTree = "<group>"; };
 		C17AFF5D1B3C4D3C00973F6C /* UIScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIScreen.swift; path = ../../UIScreen.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				C17AFF341B3C4CF200973F6C /* MEViewExtensions.app */,
-				C17AFF491B3C4CF200973F6C /* UIViewFrameSizeTests.xctest */,
+				C17AFF491B3C4CF200973F6C /* MEViewExtensionsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,13 +128,13 @@
 			dependencies = (
 			);
 			name = MEViewExtensions;
-			productName = UIViewFrameSize;
+			productName = MEViewExtensions;
 			productReference = C17AFF341B3C4CF200973F6C /* MEViewExtensions.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C17AFF481B3C4CF200973F6C /* UIViewFrameSizeTests */ = {
+		C17AFF481B3C4CF200973F6C /* MEViewExtensionsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C17AFF561B3C4CF200973F6C /* Build configuration list for PBXNativeTarget "UIViewFrameSizeTests" */;
+			buildConfigurationList = C17AFF561B3C4CF200973F6C /* Build configuration list for PBXNativeTarget "MEViewExtensionsTests" */;
 			buildPhases = (
 				C17AFF451B3C4CF200973F6C /* Sources */,
 				C17AFF461B3C4CF200973F6C /* Frameworks */,
@@ -145,9 +145,9 @@
 			dependencies = (
 				C17AFF4B1B3C4CF200973F6C /* PBXTargetDependency */,
 			);
-			name = UIViewFrameSizeTests;
-			productName = UIViewFrameSizeTests;
-			productReference = C17AFF491B3C4CF200973F6C /* UIViewFrameSizeTests.xctest */;
+			name = MEViewExtensionsTests;
+			productName = MEViewExtensionsTests;
+			productReference = C17AFF491B3C4CF200973F6C /* MEViewExtensionsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -182,7 +182,7 @@
 			projectRoot = "";
 			targets = (
 				C17AFF331B3C4CF200973F6C /* MEViewExtensions */,
-				C17AFF481B3C4CF200973F6C /* UIViewFrameSizeTests */,
+				C17AFF481B3C4CF200973F6C /* MEViewExtensionsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -394,7 +394,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C17AFF561B3C4CF200973F6C /* Build configuration list for PBXNativeTarget "UIViewFrameSizeTests" */ = {
+		C17AFF561B3C4CF200973F6C /* Build configuration list for PBXNativeTarget "MEViewExtensionsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C17AFF571B3C4CF200973F6C /* Debug */,
