@@ -3,8 +3,5 @@ osx_image: beta-xcode6.3
 branches:
   only:
     - master
-before_install: 
-  - gem install xcpretty
 script:
-  - set -o pipefail
-  - xctool test -project test/MEViewExtensions.xcodeproj -scheme MEViewExtensionsTests -sdk iphonesimulator | xcpretty -tc
+  - xctool test -project test/MEViewExtensions.xcodeproj -scheme MEViewExtensionsTests -sdk iphonesimulator
