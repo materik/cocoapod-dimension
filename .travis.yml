@@ -1,6 +1,6 @@
 language: objective-c
 before_install: 
   - brew update
-  - brew install xctool
-script: 
+  - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
+script:
   - xctool test -project test/MEViewExtensions.xcodeproj -scheme MEViewExtensions
