@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1536E891B3D8C9C0017075A /* UIScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1536E881B3D8C9C0017075A /* UIScreenTests.swift */; };
 		C17AFF3A1B3C4CF200973F6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AFF391B3C4CF200973F6C /* AppDelegate.swift */; };
 		C17AFF631B3C4D3C00973F6C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AFF5C1B3C4D3C00973F6C /* UIImageView.swift */; };
 		C17AFF641B3C4D3C00973F6C /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AFF5D1B3C4D3C00973F6C /* UIScreen.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C1536E881B3D8C9C0017075A /* UIScreenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScreenTests.swift; sourceTree = "<group>"; };
 		C17AFF341B3C4CF200973F6C /* MEViewExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEViewExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17AFF381B3C4CF200973F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C17AFF391B3C4CF200973F6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		C17AFF4C1B3C4CF200973F6C /* MEViewExtensionsTests */ = {
 			isa = PBXGroup;
 			children = (
+				C1536E881B3D8C9C0017075A /* UIScreenTests.swift */,
 				C17AFF6E1B3C4E9A00973F6C /* UIViewTests.swift */,
 				C17AFF4D1B3C4CF200973F6C /* Supporting Files */,
 			);
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17AFF6F1B3C4E9A00973F6C /* UIViewTests.swift in Sources */,
+				C1536E891B3D8C9C0017075A /* UIScreenTests.swift in Sources */,
 				C17AFF6B1B3C4D3F00973F6C /* UIScreen.swift in Sources */,
 				C17AFF6A1B3C4D3F00973F6C /* UIImageView.swift in Sources */,
 				C17AFF6C1B3C4D3F00973F6C /* UIView.swift in Sources */,
