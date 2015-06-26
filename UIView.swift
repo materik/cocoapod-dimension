@@ -18,13 +18,23 @@ public extension UIView {
         set { self.frame.origin.y = newValue }
         get { return self.frame.origin.y }
     }
-    var w: CGFloat {
+    
+    var width: CGFloat {
         set { self.frame.size.width = newValue }
         get { return self.frame.size.width }
     }
-    var h: CGFloat {
+    var w: CGFloat {
+        set { self.width = newValue }
+        get { return self.width }
+    }
+    
+    var height: CGFloat {
         set { self.frame.size.height = newValue }
         get { return self.frame.size.height }
+    }
+    var h: CGFloat {
+        set { self.height = newValue }
+        get { return self.height }
     }
     
     var top: CGFloat {
