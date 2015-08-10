@@ -8,6 +8,9 @@
 
 import UIKit
 
+// TODO(materik):
+// * needs tests
+
 public extension CGPoint {
     
     init(squared: CGFloat) {

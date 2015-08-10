@@ -3,5 +3,7 @@ osx_image: beta-xcode6.3
 branches:
   only:
     - master
+before_script:
+  - "cd Demo && pod install"
 script:
-  - xctool test -project test/MEViewExtensions.xcodeproj -scheme MEViewExtensionsTests -sdk iphonesimulator
+  - "xctool test -project Demo/Demo.xcodeproj -scheme DemoTests -sdk iphonesimulator"

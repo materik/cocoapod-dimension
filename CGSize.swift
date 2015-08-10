@@ -8,6 +8,9 @@
 
 import UIKit
 
+// TODO(materik):
+// * needs tests
+
 public extension CGSize {
     
     init(squared: CGFloat) {
