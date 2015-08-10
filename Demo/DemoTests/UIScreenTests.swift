@@ -1,11 +1,12 @@
 //
 //  UIScreenTests.swift
-//  MEViewExtensions
+//  Dimension
 //
 //  Created by materik on 256/15.
 //  Copyright (c) 2015 materik. All rights reserved.
 //
 
+import Dimension
 import UIKit
 import XCTest
 

@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.platform       = :ios, 8.0
   s.source         = { :git => "https://github.com/materik/dimension.git", :tag => "0.3.0" }
   s.source_files   = "*.swift"
-  s.exclude_files  = "test"
+  s.exclude_files  = "Demo"
   s.framework      = "UIKit"
 end
