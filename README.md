@@ -13,3 +13,18 @@ Also useful extensions of CGPoint, CGSize and CGRect.
 ```
 pod 'Dimension'
 ```
+
+# Example
+
+```
+let view = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 100.0, height: 100.0)
+view.right = 300.0  // view.frame == CGRect(x: 200.0, y: 0.0, width: 100.0, height: 100.0)
+```
+```
+let view = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 100.0, height: 100.0)
+view.bottom = 300.0  // view.frame == CGRect(x: 0.0, y: 200.0, width: 100.0, height: 100.0)
+```
+```
+let x = CGPoint(x: 10.0, y: 0.0) + CGPoint(x: 0.0, y: 10.0)  // x == CGPoint(x: 10.0, y: 10.0)
+let y = 3.0 * CGPoint(x: 10.0, y: 10.0)  // x == CGPoint(x: 30.0, y: 30.0)
+```
