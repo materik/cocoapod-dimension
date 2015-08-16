@@ -13,8 +13,19 @@ import UIKit
 
 public extension CGSize {
     
+    var w: CGFloat { return self.width }
+    var h: CGFloat { return self.height }
+    
     init(squared: CGFloat) {
         self.init(width: squared, height: squared)
+    }
+    
+    init(width: CGFloat) {
+        self.init(width: width, height: 0)
+    }
+    
+    init(height: CGFloat) {
+        self.init(width: 0, height: height)
     }
     
 }

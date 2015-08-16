@@ -17,6 +17,14 @@ public extension CGPoint {
         self.init(x: squared, y: squared)
     }
     
+    init(x: CGFloat) {
+        self.init(x: x, y: 0)
+    }
+    
+    init(y: CGFloat) {
+        self.init(x: 0, y: y)
+    }
+    
     func exists(inFrame frame: CGRect) -> Bool {
         return (self.x >= frame.origin.x && self.x <= (frame.origin.x + frame.size.width) &&
             self.y >= frame.origin.y && self.y <= (frame.origin.y + frame.size.height))
