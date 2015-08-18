@@ -16,6 +16,7 @@ public extension CGRect {
     var w: CGFloat { return self.width }
     var h: CGFloat { return self.height }
     var center: CGPoint { return self.origin + 0.5 * self.size }
+    var relativeCenter: CGPoint { return CGPoint() + 0.5 * self.size }
 
     // -
     
@@ -61,6 +62,14 @@ public extension CGRect {
     
     init(x: CGFloat, y: CGFloat, size: CGSize) {
         self.init(origin: CGPoint(x: x, y: y), size: size)
+    }
+    
+    init(x: CGFloat, size: CGSize) {
+        self.init(origin: CGPoint(x: x, y: 0), size: size)
+    }
+    
+    init(y: CGFloat, size: CGSize) {
+        self.init(origin: CGPoint(x: 0, y: y), size: size)
     }
     
     // -

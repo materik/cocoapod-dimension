@@ -41,7 +41,7 @@ public func -(pnt1: CGPoint, pnt2: CGPoint) -> CGPoint {
 }
 
 public func +(pnt: CGPoint, size: CGSize) -> CGPoint {
-    return CGPoint(x: pnt.x + size.width, y: pnt.y * size.height)
+    return CGPoint(x: pnt.x + size.width, y: pnt.y + size.height)
 }
 
 public func -(ptn: CGPoint, size: CGSize) -> CGPoint {

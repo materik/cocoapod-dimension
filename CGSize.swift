@@ -24,8 +24,20 @@ public extension CGSize {
         self.init(width: width, height: 0)
     }
     
+    init(w: CGFloat) {
+        self.init(width: w)
+    }
+    
     init(height: CGFloat) {
         self.init(width: 0, height: height)
+    }
+    
+    init(h: CGFloat) {
+        self.init(height: h)
+    }
+    
+    init(w: CGFloat, h: CGFloat) {
+        self.init(width: w, height: h)
     }
     
 }
