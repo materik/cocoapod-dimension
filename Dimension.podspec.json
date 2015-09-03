@@ -19,12 +19,7 @@
   },
   "source_files": "*.swift",
   "exclude_files": "Demo",
-  "subspecs": [
-    {
-      "name": "Default",
-      "frameworks": [
-        "UIKit"
-      ]
-    }
+  "frameworks": [
+    "UIKit"
   ]
 }
