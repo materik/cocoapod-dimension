@@ -32,6 +32,10 @@ public extension CGPoint {
     
 }
 
+public func *(scalar: CGFloat, pnt: CGPoint) -> CGPoint {
+    return CGPoint(x: scalar * pnt.x, y: scalar * pnt.y)
+}
+
 public func +(pnt1: CGPoint, pnt2: CGPoint) -> CGPoint {
     return CGPoint(x: pnt1.x + pnt2.x, y: pnt1.y + pnt2.y)
 }
