@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C18F5F331C3091E500BCA0C7 /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18F5F321C3091E500BCA0C7 /* CGPointTests.swift */; };
 		C1C3003D1B78E69D00E86584 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C3003C1B78E69D00E86584 /* AppDelegate.swift */; };
 		C1C3005E1B78E74100E86584 /* UIScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C3005C1B78E74100E86584 /* UIScreenTests.swift */; };
 		C1C3005F1B78E74100E86584 /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C3005D1B78E74100E86584 /* UIViewTests.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		93EBAB12CA68D7F858AFD23D /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C18F5F321C3091E500BCA0C7 /* CGPointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointTests.swift; sourceTree = "<group>"; };
 		C1C300371B78E69D00E86584 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C3003B1B78E69D00E86584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1C3003C1B78E69D00E86584 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				C1C3005C1B78E74100E86584 /* UIScreenTests.swift */,
 				C1C3005D1B78E74100E86584 /* UIViewTests.swift */,
+				C18F5F321C3091E500BCA0C7 /* CGPointTests.swift */,
 				C1C300501B78E69D00E86584 /* Supporting Files */,
 			);
 			path = DemoTests;
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1C3005E1B78E74100E86584 /* UIScreenTests.swift in Sources */,
+				C18F5F331C3091E500BCA0C7 /* CGPointTests.swift in Sources */,
 				C1C3005F1B78E74100E86584 /* UIViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

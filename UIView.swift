@@ -11,17 +11,17 @@ import UIKit
 public extension UIView {
 
     var x: CGFloat {
-        set { self.frame.origin.x = newValue }
-        get { return self.frame.origin.x }
+        set { self.frame.x = newValue }
+        get { return self.frame.x }
     }
     var y: CGFloat {
-        set { self.frame.origin.y = newValue }
-        get { return self.frame.origin.y }
+        set { self.frame.y = newValue }
+        get { return self.frame.y }
     }
     
     var width: CGFloat {
         set { self.frame.size.width = newValue }
-        get { return self.frame.size.width }
+        get { return self.frame.width }
     }
     var w: CGFloat {
         set { self.width = newValue }
@@ -30,7 +30,7 @@ public extension UIView {
     
     var height: CGFloat {
         set { self.frame.size.height = newValue }
-        get { return self.frame.size.height }
+        get { return self.frame.height }
     }
     var h: CGFloat {
         set { self.height = newValue }
@@ -61,6 +61,18 @@ public extension UIView {
     var size: CGSize {
         set { self.frame.size = newValue }
         get { return self.frame.size }
+    }
+    
+    var relativeCenter: CGPoint { return self.frame.relativeCenter }
+    
+    // -
+    
+    convenience init(origin: CGPoint) {
+        self.init(frame: CGRect(origin: origin))
+    }
+    
+    convenience init(size: CGSize) {
+        self.init(frame: CGRect(size: size))
     }
 
 }

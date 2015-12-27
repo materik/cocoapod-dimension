@@ -13,8 +13,41 @@ import UIKit
 
 public extension CGRect {
     
-    var w: CGFloat { return self.width }
-    var h: CGFloat { return self.height }
+    var x: CGFloat {
+        set { self.origin.x = newValue }
+        get { return self.origin.x }
+    }
+    var y: CGFloat {
+        set { self.origin.y = newValue }
+        get { return self.origin.y }
+    }
+    
+    var w: CGFloat {
+        set { self.size.width = newValue }
+        get { return self.width }
+    }
+    var h: CGFloat {
+        set { self.size.height = newValue }
+        get { return self.height }
+    }
+    
+    var top: CGFloat {
+        set { self.y = newValue }
+        get { return self.y }
+    }
+    var right: CGFloat {
+        set { self.x = newValue - self.w }
+        get { return self.x + self.w }
+    }
+    var bottom: CGFloat {
+        set { self.y = newValue - self.h }
+        get { return self.y + self.h }
+    }
+    var left: CGFloat {
+        set { self.x = newValue }
+        get { return self.x }
+    }
+    
     var center: CGPoint { return self.origin + 0.5 * self.size }
     var relativeCenter: CGPoint { return CGPoint() + 0.5 * self.size }
 
