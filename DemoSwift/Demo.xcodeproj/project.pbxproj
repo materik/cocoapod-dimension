@@ -11,7 +11,7 @@
 		C1C3003D1B78E69D00E86584 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C3003C1B78E69D00E86584 /* AppDelegate.swift */; };
 		C1C3005E1B78E74100E86584 /* UIScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C3005C1B78E74100E86584 /* UIScreenTests.swift */; };
 		C1C3005F1B78E74100E86584 /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C3005D1B78E74100E86584 /* UIViewTests.swift */; };
-		D5106CD49339CEE4FFAEE8AC /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EBAB12CA68D7F858AFD23D /* Pods_Demo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D5106CD49339CEE4FFAEE8AC /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EBAB12CA68D7F858AFD23D /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

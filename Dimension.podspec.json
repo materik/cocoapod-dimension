@@ -1,6 +1,6 @@
 {
   "name": "Dimension",
-  "version": "0.3.3",
+  "version": "1.0.0",
   "summary": "Extensions for UIKit objects for easier access of frame properties",
   "homepage": "https://github.com/materik/dimension.git",
   "license": {
@@ -16,11 +16,25 @@
   },
   "source": {
     "git": "https://github.com/materik/dimension.git",
-    "tag": "0.3.3"
+    "tag": "1.0.0"
   },
-  "source_files": "*.swift",
-  "exclude_files": "Demo",
+  "exclude_files": [
+     "DemoSwift",
+     "DemoObjC"
+  ],
   "frameworks": [
     "UIKit"
+  ],
+  "default_subspecs": "Swift",
+  "subspecs": [
+    {
+      "name": "Swift",
+      "source_files": "*.swift"
+    },
+    {
+      "name": "ObjC",
+      "source_files": "*.{h,m}",
+      "public_header_files": "*.h"
+    }
   ]
 }

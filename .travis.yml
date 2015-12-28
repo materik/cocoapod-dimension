@@ -1,16 +1,16 @@
-language: swift
+language: objective-c
 osx_image: xcode7
 branches:
   only:
     - master
 before_install:
   - export LANG=en_US.UTF-8
-  - rvm install 2.1.3 && rvm use 2.1.3
-  - gem install cocoapods
+  - brew update
 install:
-  - cd Demo && pod install && cd ..
+  - cd DemoSwift && pod install && cd ..
+  - cd DemoObjC && pod install && cd ..
 script:
-  - xctool -configuration Debug -sdk iphonesimulator -workspace Demo/Demo.xcworkspace
-    -scheme DemoTests build-tests
-  - xctool -workspace Demo/Demo.xcworkspace -scheme DemoTests run-tests -test-sdk iphonesimulator9.0
-    -destination "platform=iOS Simulator,name=iPhone 6,OS=9.0"
+  - xctool -configuration Debug -sdk iphonesimulator -workspace DemoSwift/Demo.xcworkspace -scheme Demo build-tests
+  - xctool -workspace DemoSwift/Demo.xcworkspace -scheme Demo run-tests -test-sdk iphonesimulator9.0
+  - xctool -configuration Debug -sdk iphonesimulator -workspace DemoObjC/Demo.xcworkspace -scheme Demo build-tests
+  - xctool -workspace DemoObjC/Demo.xcworkspace -scheme Demo run-tests -test-sdk iphonesimulator9.0

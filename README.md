@@ -1,12 +1,12 @@
 # Dimension
 
 [![](https://img.shields.io/cocoapods/v/Dimension.svg?style=flat-square)](https://cocoapods.org/pods/Dimension)
-![](https://img.shields.io/travis/materik/meviewextensions.svg?style=flat-square)
+[![](https://img.shields.io/travis/materik/dimension.svg?style=flat-square)](https://travis-ci.org/materik/dimension)
 ![](https://img.shields.io/cocoapods/p/Dimension.svg?style=flat-square)
 ![](https://img.shields.io/cocoapods/l/Dimension.svg?style=flat-square)
 
 Extensions for UIKit objects for easier access of frame properties.
-Also useful extensions of CGPoint, CGSize and CGRect.
+Also useful extensions of CGPoint, CGSize, CGRect and UIEdgeInsets.
 
 # Install
 
@@ -14,7 +14,19 @@ Also useful extensions of CGPoint, CGSize and CGRect.
 pod 'Dimension'
 ```
 
-# Example
+## For Swift (Default)
+
+```
+pod 'Dimension/Swift'
+```
+
+## For Objective-C
+
+```
+pod 'Dimension/ObjC'
+```
+
+# Examples
 
 ```
 let view = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 100.0, height: 100.0)
