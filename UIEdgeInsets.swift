@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIEdgeInsets {
+public extension UIEdgeInsets {
     
     // -
     
@@ -93,7 +93,11 @@ extension UIEdgeInsets {
     init(horizontal: CGFloat, bottom: CGFloat) {
         self.init(top: 0.0, left: horizontal, bottom: bottom, right: horizontal)
     }
-    
+
+    init(vertical: CGFloat) {
+        self.init(top: vertical, left: 0.0, bottom: vertical, right: 0.0)
+    }
+
     init(vertical: CGFloat, left: CGFloat, right: CGFloat) {
         self.init(top: vertical, left: left, bottom: vertical, right: right)
     }
