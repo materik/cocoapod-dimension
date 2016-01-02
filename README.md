@@ -1,4 +1,4 @@
-# Dimension
+![](logo.png)
 
 [![](https://img.shields.io/cocoapods/v/Dimension.svg?style=flat-square)](https://cocoapods.org/pods/Dimension)
 [![](https://img.shields.io/travis/materik/dimension.svg?style=flat-square)](https://travis-ci.org/materik/dimension)
