@@ -29,12 +29,12 @@
   "subspecs": [
     {
       "name": "Swift",
-      "source_files": "*.swift"
+      "source_files": "Swift/*.swift"
     },
     {
       "name": "ObjC",
-      "source_files": "*.{h,m}",
-      "public_header_files": "*.h"
+      "source_files": "ObjC/*.{h,m}",
+      "public_header_files": "ObjC/*.h"
     }
   ]
 }
