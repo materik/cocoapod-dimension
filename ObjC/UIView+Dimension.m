@@ -49,6 +49,31 @@
   [self setFrame:CGRectMake(self.x, self.y, self.w, height)];
 }
 
+- (CGFloat)top {
+  return self.y;
+}
+- (void)setTop:(CGFloat)top {
+  self.y = top;
+}
+- (CGFloat)left {
+  return self.x;
+}
+- (void)setLeft:(CGFloat)left {
+  self.x = left;
+}
+- (CGFloat)bottom {
+  return self.y + self.h;
+}
+- (void)setBottom:(CGFloat)bottom {
+  self.y = bottom - self.h;
+}
+- (CGFloat)right {
+  return self.x + self.w;
+}
+- (void)setRight:(CGFloat)right {
+  self.x = right - self.w;
+}
+
 - (CGPoint)origin {
   return self.frame.origin;
 }
@@ -60,13 +85,6 @@
 }
 - (void)setSize:(CGSize)size {
   [self setFrame:CGRectMake(self.x, self.y, size.width, size.height)];
-}
-
-- (CGPoint)center {
-  return CGPointMake(self.x + self.w / 2.0, self.y + self.h / 2.0);
-}
-- (CGPoint)relativeCenter {
-  return CGPointMake(self.w / 2.0, self.h / 2.0);
 }
 
 @end

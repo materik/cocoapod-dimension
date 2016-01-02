@@ -25,6 +25,9 @@
 - (CGSize)size {
   return self.bounds.size;
 }
+- (CGPoint)center {
+  return CGPointMake(0.5 * self.size.width, 0.5 * self.size.height);
+}
 
 + (CGFloat)w {
   return [UIScreen mainScreen].w;
@@ -40,6 +43,9 @@
 }
 + (CGSize)size {
   return [UIScreen mainScreen].size;
+}
++ (CGPoint)center {
+  return [UIScreen mainScreen].center;
 }
 
 @end

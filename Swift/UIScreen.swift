@@ -10,16 +10,18 @@ import UIKit
 
 public extension UIScreen {
     
-    var width: CGFloat { return self.bounds.width }
     var w: CGFloat { return self.width }
-    var height: CGFloat { return self.bounds.height }
     var h: CGFloat { return self.height }
+    var width: CGFloat { return self.bounds.width }
+    var height: CGFloat { return self.bounds.height }
     var size: CGSize { return CGSize(width: self.width, height: self.height) }
+    var center: CGPoint { return self.size.center }
     
+    class var w: CGFloat { return UIScreen.mainScreen().w }
+    class var h: CGFloat { return UIScreen.mainScreen().h }
     class var width: CGFloat { return UIScreen.mainScreen().width }
-    class var w: CGFloat { return UIScreen.width }
     class var height: CGFloat { return UIScreen.mainScreen().height }
-    class var h: CGFloat { return UIScreen.height }
-    class var size: CGSize { return CGSize(width: UIScreen.width, height: UIScreen.height) }
+    class var size: CGSize { return UIScreen.mainScreen().size }
+    class var center: CGPoint { return UIScreen.mainScreen().center }
     
 }

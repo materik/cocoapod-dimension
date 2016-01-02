@@ -18,23 +18,22 @@ public extension UIView {
         set { self.frame.y = newValue }
         get { return self.frame.y }
     }
-    
-    var width: CGFloat {
-        set { self.frame.size.width = newValue }
-        get { return self.frame.width }
-    }
     var w: CGFloat {
         set { self.width = newValue }
         get { return self.width }
     }
-    
-    var height: CGFloat {
-        set { self.frame.size.height = newValue }
-        get { return self.frame.height }
-    }
     var h: CGFloat {
         set { self.height = newValue }
         get { return self.height }
+    }
+    
+    var width: CGFloat {
+        set { self.frame.width = newValue }
+        get { return self.frame.width }
+    }
+    var height: CGFloat {
+        set { self.frame.height = newValue }
+        get { return self.frame.height }
     }
     
     var top: CGFloat {
@@ -62,8 +61,6 @@ public extension UIView {
         set { self.frame.size = newValue }
         get { return self.frame.size }
     }
-    
-    var relativeCenter: CGPoint { return self.frame.relativeCenter }
     
     // -
     

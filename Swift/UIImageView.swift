@@ -10,17 +10,17 @@ import UIKit
 
 public extension UIImageView {
     
-    func setWidth(andKeepImageRatio w: CGFloat) {
-        self.w = w
+    func setWidth(andKeepImageRatio width: CGFloat) {
+        self.width = width
         if let image = self.image {
-            self.h = w / image.size.width * image.size.height
+            self.height = width / image.size.width * image.size.height
         }
     }
     
-    func setHeight(andKeepImageRatio h: CGFloat) {
-        self.h = h
+    func setHeight(andKeepImageRatio height: CGFloat) {
+        self.height = height
         if let image = self.image {
-            self.w = h / image.size.height * image.size.width
+            self.width = height / image.size.height * image.size.width
         }
     }
     

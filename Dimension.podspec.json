@@ -34,7 +34,7 @@
     {
       "name": "ObjC",
       "source_files": "ObjC/*.{h,m}",
-      "public_header_files": "ObjC/*.h"
+      "public_header_files": "ObjC/Dimension.h"
     }
   ]
 }

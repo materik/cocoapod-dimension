@@ -6,4 +6,6 @@
 //
 //
 
+#import "UIImageView+Dimension.h"
+#import "UIScreen+Dimension.h"
 #import "UIView+Dimension.h"

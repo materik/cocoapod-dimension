@@ -25,12 +25,18 @@
 - (CGFloat)height;
 - (void)setHeight:(CGFloat)height;
 
+- (CGFloat)top;
+- (void)setTop:(CGFloat)top;
+- (CGFloat)right;
+- (void)setRight:(CGFloat)right;
+- (CGFloat)bottom;
+- (void)setBottom:(CGFloat)bottom;
+- (CGFloat)left;
+- (void)setLeft:(CGFloat)left;
+
 - (CGPoint)origin;
 - (void)setOrigin:(CGPoint)origin;
 - (CGSize)size;
 - (void)setSize:(CGSize)size;
-
-- (CGPoint)center;
-- (CGPoint)relativeCenter;
 
 @end

@@ -10,4 +10,7 @@
 
 @interface UIImageView (Dimension)
 
+- (void)setWidthAndKeepRatio:(CGFloat)width;
+- (void)setHeightAndKeepRatio:(CGFloat)height;
+
 @end

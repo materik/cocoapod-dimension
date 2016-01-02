@@ -15,11 +15,13 @@
 - (CGFloat)h;
 - (CGFloat)height;
 - (CGSize)size;
+- (CGPoint)center;
 
 + (CGFloat)w;
 + (CGFloat)width;
 + (CGFloat)h;
 + (CGFloat)height;
 + (CGSize)size;
++ (CGPoint)center;
 
 @end

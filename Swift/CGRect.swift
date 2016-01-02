@@ -21,14 +21,22 @@ public extension CGRect {
         set { self.origin.y = newValue }
         get { return self.origin.y }
     }
-    
     var w: CGFloat {
-        set { self.size.width = newValue }
+        set { self.width = newValue }
         get { return self.width }
     }
     var h: CGFloat {
-        set { self.size.height = newValue }
+        set { self.height = newValue }
         get { return self.height }
+    }
+    
+    var width: CGFloat {
+        set { self.size.width = newValue }
+        get { return self.size.width }
+    }
+    var height: CGFloat {
+        set { self.size.height = newValue }
+        get { return self.size.height }
     }
     
     var top: CGFloat {
@@ -48,8 +56,10 @@ public extension CGRect {
         get { return self.x }
     }
     
-    var center: CGPoint { return self.origin + 0.5 * self.size }
-    var relativeCenter: CGPoint { return CGPoint() + 0.5 * self.size }
+    var center: CGPoint {
+        set { self.origin = center - 0.5 * self.size }
+        get { return self.origin + 0.5 * self.size }
+    }
 
     // -
     
@@ -64,27 +74,27 @@ public extension CGRect {
     // -
     
     init(x: CGFloat) {
-        self.init(x: x, y: 0, width: 0, height: 0)
+        self.init(x: x, y: 0.0, width: 0.0, height: 0.0)
     }
-    
+
     init(y: CGFloat) {
-        self.init(x: 0, y: y, width: 0, height: 0)
-    }
-    
-    init(width: CGFloat) {
-        self.init(x: 0, y: 0, width: width, height: 0)
+        self.init(x: 0.0, y: y, width: 0.0, height: 0.0)
     }
     
     init(w: CGFloat) {
         self.init(width: w)
     }
     
-    init(height: CGFloat) {
-        self.init(x: 0, y: 0, width: 0, height: height)
-    }
-    
     init(h: CGFloat) {
         self.init(height: h)
+    }
+    
+    init(width: CGFloat) {
+        self.init(x: 0.0, y: 0.0, width: width, height: 0.0)
+    }
+    
+    init(height: CGFloat) {
+        self.init(x: 0.0, y: 0.0, width: 0.0, height: height)
     }
     
     // -
@@ -98,21 +108,21 @@ public extension CGRect {
     }
     
     init(x: CGFloat, size: CGSize) {
-        self.init(origin: CGPoint(x: x, y: 0), size: size)
+        self.init(origin: CGPoint(x: x, y: 0.0), size: size)
     }
     
     init(y: CGFloat, size: CGSize) {
-        self.init(origin: CGPoint(x: 0, y: y), size: size)
+        self.init(origin: CGPoint(x: 0.0, y: y), size: size)
     }
     
     // -
     
-    init(width: CGFloat, height: CGFloat) {
-        self.init(origin: CGPoint(), width: width, height: height)
-    }
-    
     init(w: CGFloat, h: CGFloat) {
         self.init(width: w, height: h)
+    }
+    
+    init(width: CGFloat, height: CGFloat) {
+        self.init(origin: CGPoint(), width: width, height: height)
     }
     
     init(origin: CGPoint, width: CGFloat, height: CGFloat) {

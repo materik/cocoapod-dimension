@@ -13,23 +13,22 @@ import UIKit
 
 public extension CGSize {
     
-    var w: CGFloat { return self.width }
-    var h: CGFloat { return self.height }
+    var w: CGFloat {
+        get { return self.width }
+        set { self.width = newValue }
+    }
+    var h: CGFloat {
+        get { return self.height }
+        set { self.height = newValue }
+    }
+    var center: CGPoint { return 0.5 * CGPoint(size: self) }
     
     init(squared: CGFloat) {
         self.init(width: squared, height: squared)
     }
     
-    init(width: CGFloat) {
-        self.init(width: width, height: 0)
-    }
-    
     init(w: CGFloat) {
         self.init(width: w)
-    }
-    
-    init(height: CGFloat) {
-        self.init(width: 0, height: height)
     }
     
     init(h: CGFloat) {
@@ -38,6 +37,14 @@ public extension CGSize {
     
     init(w: CGFloat, h: CGFloat) {
         self.init(width: w, height: h)
+    }
+    
+    init(width: CGFloat) {
+        self.init(width: width, height: 0.0)
+    }
+    
+    init(height: CGFloat) {
+        self.init(width: 0.0, height: height)
     }
     
 }
@@ -51,5 +58,5 @@ public func +(size1: CGSize, size2: CGSize) -> CGSize {
 }
 
 public func -(size1: CGSize, size2: CGSize) -> CGSize {
-    return CGSize(width: size1.width - size2.width, height: size1.height - size2.height)
+    return size1 + -1.0 * size2
 }

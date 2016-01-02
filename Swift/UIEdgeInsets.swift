@@ -112,18 +112,26 @@ public extension UIEdgeInsets {
     
 }
 
+public func *(scalar: CGFloat, inset: UIEdgeInsets) -> UIEdgeInsets {
+    return UIEdgeInsets(top: scalar * inset.top, left: scalar * inset.left,
+        bottom: scalar * inset.bottom, right: scalar * inset.right)
+}
+
 public func +(inset1: UIEdgeInsets, inset2: UIEdgeInsets) -> UIEdgeInsets {
     return UIEdgeInsets(top: inset1.top + inset2.top, left: inset1.left + inset2.left,
         bottom: inset1.bottom + inset2.bottom, right: inset1.right + inset2.right)
 }
 
 public func -(inset1: UIEdgeInsets, inset2: UIEdgeInsets) -> UIEdgeInsets {
-    return UIEdgeInsets(top: inset1.top - inset2.top, left: inset1.left - inset2.left,
-        bottom: inset1.bottom - inset2.bottom, right: inset1.right - inset2.right)
+    return inset1 + -1.0 * inset2
 }
 
 public func +(frame: CGRect, inset: UIEdgeInsets) -> CGRect {
     return CGRect(x: frame.x + inset.left, y: frame.y + inset.top,
         width: frame.width - inset.left - inset.right,
         height: frame.height - inset.top - inset.bottom)
+}
+
+public func -(frame: CGRect, inset: UIEdgeInsets) -> CGRect {
+    return frame + -1.0 * inset
 }
