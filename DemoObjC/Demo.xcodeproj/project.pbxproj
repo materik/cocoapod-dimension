@@ -10,7 +10,6 @@
 		0D61611F4382252154B87BDF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 257B8ADCC13CA00CFB601D2A /* libPods.a */; };
 		C1585DF91C31EC5100661F82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1585DF81C31EC5100661F82 /* main.m */; };
 		C1585DFC1C31EC5100661F82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1585DFB1C31EC5100661F82 /* AppDelegate.m */; };
-		C1585E041C31EC5100661F82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1585E031C31EC5100661F82 /* Assets.xcassets */; };
 		C1585E121C31EC5100661F82 /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1585E111C31EC5100661F82 /* UIViewTests.m */; };
 		D34BAD22E130DD0A94C89A02 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 257B8ADCC13CA00CFB601D2A /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -33,7 +32,6 @@
 		C1585DF81C31EC5100661F82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C1585DFA1C31EC5100661F82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C1585DFB1C31EC5100661F82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C1585E031C31EC5100661F82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1585E081C31EC5100661F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1585E0D1C31EC5100661F82 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1585E111C31EC5100661F82 /* UIViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewTests.m; sourceTree = "<group>"; };
@@ -94,8 +92,6 @@
 			children = (
 				C1585DFA1C31EC5100661F82 /* AppDelegate.h */,
 				C1585DFB1C31EC5100661F82 /* AppDelegate.m */,
-				C1585E031C31EC5100661F82 /* Assets.xcassets */,
-				C1585E081C31EC5100661F82 /* Info.plist */,
 				C1585DF71C31EC5100661F82 /* Supporting Files */,
 			);
 			path = Demo;
@@ -104,6 +100,7 @@
 		C1585DF71C31EC5100661F82 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C1585E081C31EC5100661F82 /* Info.plist */,
 				C1585DF81C31EC5100661F82 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -211,7 +208,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1585E041C31EC5100661F82 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +426,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 052BEA6F6D8CB87E4AA1E3B1 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -443,7 +438,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 45C9E5C70C3D6077C1C982E2 /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
