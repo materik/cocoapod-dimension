@@ -13,11 +13,16 @@
 
 - (void)setWidthAndKeepRatio:(CGFloat)width {
   self.width = width;
-  self.height = width / self.image.size.width * self.image.size.height;
+  if (self.image.size.width > 0) {
+    self.height = width / self.image.size.width * self.image.size.height;
+  }
 }
+
 - (void)setHeightAndKeepRatio:(CGFloat)height {
   self.height = height;
-  self.width = height / self.image.size.height * self.image.size.width;
+  if (self.image.size.height > 0) {
+    self.width = height / self.image.size.height * self.image.size.width;
+  }
 }
 
 @end
