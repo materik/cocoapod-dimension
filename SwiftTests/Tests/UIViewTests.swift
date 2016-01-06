@@ -24,10 +24,10 @@ class UIViewTests: XCTestCase {
     }
 
     func testSetX() {
-        let view1 = UIView()
-        view1.x = 10
-        XCTAssertEqual(view1.frame.origin.x, view1.x)
-        XCTAssertEqual(view1.x, 10)
+        let view = UIView()
+        view.x = 10
+        XCTAssertEqual(view.frame.origin.x, view.x)
+        XCTAssertEqual(view.x, 10)
     }
 
     // MARK: y
@@ -42,10 +42,10 @@ class UIViewTests: XCTestCase {
     }
 
     func testSetY() {
-        let view1 = UIView()
-        view1.y = 10
-        XCTAssertEqual(view1.frame.origin.y, view1.y)
-        XCTAssertEqual(view1.y, 10)
+        let view = UIView()
+        view.y = 10
+        XCTAssertEqual(view.frame.origin.y, view.y)
+        XCTAssertEqual(view.y, 10)
     }
 
     // MARK: width
@@ -60,10 +60,10 @@ class UIViewTests: XCTestCase {
     }
     
     func testSetWidth() {
-        let view1 = UIView()
-        view1.width = 10
-        XCTAssertEqual(view1.frame.size.width, view1.width)
-        XCTAssertEqual(view1.width, 10)
+        let view = UIView()
+        view.width = 10
+        XCTAssertEqual(view.frame.size.width, view.width)
+        XCTAssertEqual(view.width, 10)
     }
     
     func testGetW() {
@@ -76,10 +76,10 @@ class UIViewTests: XCTestCase {
     }
     
     func testSetW() {
-        let view1 = UIView()
-        view1.w = 10
-        XCTAssertEqual(view1.frame.size.width, view1.w)
-        XCTAssertEqual(view1.w, 10)
+        let view = UIView()
+        view.w = 10
+        XCTAssertEqual(view.frame.size.width, view.w)
+        XCTAssertEqual(view.w, 10)
     }
 
     // MARK: height
@@ -94,10 +94,10 @@ class UIViewTests: XCTestCase {
     }
     
     func testSetHeight() {
-        let view1 = UIView()
-        view1.height = 10
-        XCTAssertEqual(view1.frame.size.height, view1.height)
-        XCTAssertEqual(view1.height, 10)
+        let view = UIView()
+        view.height = 10
+        XCTAssertEqual(view.frame.size.height, view.height)
+        XCTAssertEqual(view.height, 10)
     }
     
     func testGetH() {
@@ -110,10 +110,10 @@ class UIViewTests: XCTestCase {
     }
     
     func testSetH() {
-        let view1 = UIView()
-        view1.h = 10
-        XCTAssertEqual(view1.frame.size.height, view1.h)
-        XCTAssertEqual(view1.h, 10)
+        let view = UIView()
+        view.h = 10
+        XCTAssertEqual(view.frame.size.height, view.h)
+        XCTAssertEqual(view.h, 10)
     }
 
     // MARK: top
@@ -128,10 +128,10 @@ class UIViewTests: XCTestCase {
     }
 
     func testSetTop() {
-        let view1 = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
-        view1.top = 10
-        XCTAssertEqual(view1.frame.origin.y, view1.top)
-        XCTAssertEqual(view1.top, 10)
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        view.top = 10
+        XCTAssertEqual(view.frame.origin.y, view.top)
+        XCTAssertEqual(view.top, 10)
     }
 
     // MARK: right
@@ -146,10 +146,10 @@ class UIViewTests: XCTestCase {
     }
 
     func testSetRight() {
-        let view1 = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
-        view1.right = 10
-        XCTAssertEqual(view1.frame.origin.x + view1.frame.size.width, view1.right)
-        XCTAssertEqual(view1.right, 10)
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        view.right = 10
+        XCTAssertEqual(view.frame.origin.x + view.frame.size.width, view.right)
+        XCTAssertEqual(view.right, 10)
     }
 
     // MARK: bottom 
@@ -164,10 +164,10 @@ class UIViewTests: XCTestCase {
     }
 
     func testSetBottom() {
-        let view1 = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
-        view1.bottom = 10
-        XCTAssertEqual(view1.frame.origin.y + view1.frame.size.height, view1.bottom)
-        XCTAssertEqual(view1.bottom, 10)
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        view.bottom = 10
+        XCTAssertEqual(view.frame.origin.y + view.frame.size.height, view.bottom)
+        XCTAssertEqual(view.bottom, 10)
     }
 
     // MARK: left
@@ -182,10 +182,10 @@ class UIViewTests: XCTestCase {
     }
 
     func testSetLeft() {
-        let view1 = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
-        view1.left = 10
-        XCTAssertEqual(view1.frame.origin.x, view1.left)
-        XCTAssertEqual(view1.left, 10)
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        view.left = 10
+        XCTAssertEqual(view.frame.origin.x, view.left)
+        XCTAssertEqual(view.left, 10)
     }
 
     // MARK: origin
@@ -200,10 +200,10 @@ class UIViewTests: XCTestCase {
     }
 
     func testSetOrigin() {
-        let view1 = UIView()
-        view1.origin = CGPoint(x: 10, y: 0)
-        XCTAssertEqual(view1.frame.origin, view1.origin)
-        XCTAssertEqual(view1.origin, CGPoint(x: 10, y: 0))
+        let view = UIView()
+        view.origin = CGPoint(x: 10, y: 0)
+        XCTAssertEqual(view.frame.origin, view.origin)
+        XCTAssertEqual(view.origin, CGPoint(x: 10, y: 0))
     }
 
     // MARK: size
@@ -218,10 +218,22 @@ class UIViewTests: XCTestCase {
     }
 
     func testSetSize() {
-        let view1 = UIView()
-        view1.size = CGSize(width: 10, height: 0)
-        XCTAssertEqual(view1.frame.size, view1.size)
-        XCTAssertEqual(view1.size, CGSize(width: 10, height: 0))
+        let view = UIView()
+        view.size = CGSize(width: 10, height: 0)
+        XCTAssertEqual(view.frame.size, view.size)
+        XCTAssertEqual(view.size, CGSize(width: 10, height: 0))
+    }
+    
+    // MARK: init
+    
+    func testInitOrigin() {
+        let view = UIView(origin: CGPoint(x: 10, y: 20))
+        XCTAssertEqual(view.origin, CGPoint(x: 10, y: 20))
+    }
+    
+    func testInitSize() {
+        let view = UIView(size: CGSize(width: 10, height: 20))
+        XCTAssertEqual(view.size, CGSize(width: 10, height: 20))
     }
 
 }
