@@ -55,5 +55,13 @@ class UIScreenTests: XCTestCase {
         XCTAssertEqual(mainScreen.size, CGSize(width: 320, height: 480))
         XCTAssertEqual(UIScreen.size, CGSize(width: 320, height: 480))
     }
+    
+    // MARK: center
+    
+    func testGetCenter() {
+        let mainScreen = UIScreen.mainScreen()
+        XCTAssertEqual(mainScreen.center, CGPoint(x: 160, y: 240))
+        XCTAssertEqual(UIScreen.center, CGPoint(x: 160, y: 240))
+    }
 
 }
