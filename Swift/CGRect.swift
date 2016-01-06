@@ -8,10 +8,9 @@
 
 import UIKit
 
-// TODO(materik):
-// * needs tests
-
 public extension CGRect {
+    
+    // MARK: properties
     
     var x: CGFloat {
         set { self.origin.x = newValue }
@@ -22,21 +21,12 @@ public extension CGRect {
         get { return self.origin.y }
     }
     var w: CGFloat {
-        set { self.width = newValue }
+        set { self.size.width = newValue }
         get { return self.width }
     }
     var h: CGFloat {
-        set { self.height = newValue }
-        get { return self.height }
-    }
-    
-    var width: CGFloat {
-        set { self.size.width = newValue }
-        get { return self.size.width }
-    }
-    var height: CGFloat {
         set { self.size.height = newValue }
-        get { return self.size.height }
+        get { return self.height }
     }
     
     var top: CGFloat {
@@ -57,11 +47,11 @@ public extension CGRect {
     }
     
     var center: CGPoint {
-        set { self.origin = center - 0.5 * self.size }
+        set { self.origin = newValue - 0.5 * self.size }
         get { return self.origin + 0.5 * self.size }
     }
-
-    // -
+    
+    // MARK: init
     
     init(origin: CGPoint) {
         self.init(origin: origin, size: CGSize())
@@ -70,8 +60,6 @@ public extension CGRect {
     init(size: CGSize) {
         self.init(origin: CGPoint(), size: size)
     }
-    
-    // -
     
     init(x: CGFloat) {
         self.init(x: x, y: 0.0, width: 0.0, height: 0.0)
@@ -97,8 +85,6 @@ public extension CGRect {
         self.init(x: 0.0, y: 0.0, width: 0.0, height: height)
     }
     
-    // -
-    
     init(x: CGFloat, y: CGFloat) {
         self.init(x: x, y: y, size: CGSize())
     }
@@ -115,8 +101,6 @@ public extension CGRect {
         self.init(origin: CGPoint(x: 0.0, y: y), size: size)
     }
     
-    // -
-    
     init(w: CGFloat, h: CGFloat) {
         self.init(width: w, height: h)
     }
@@ -125,12 +109,12 @@ public extension CGRect {
         self.init(origin: CGPoint(), width: width, height: height)
     }
     
-    init(origin: CGPoint, width: CGFloat, height: CGFloat) {
-        self.init(origin: origin, size: CGSize(width: width, height: height))
-    }
-    
     init(origin: CGPoint, w: CGFloat, h: CGFloat) {
         self.init(origin: origin, width: w, height: h)
+    }
+    
+    init(origin: CGPoint, width: CGFloat, height: CGFloat) {
+        self.init(origin: origin, size: CGSize(width: width, height: height))
     }
     
 }

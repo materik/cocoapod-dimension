@@ -28,11 +28,11 @@ public extension UIView {
     }
     
     var width: CGFloat {
-        set { self.frame.width = newValue }
+        set { self.frame.size.width = newValue }
         get { return self.frame.width }
     }
     var height: CGFloat {
-        set { self.frame.height = newValue }
+        set { self.frame.size.height = newValue }
         get { return self.frame.height }
     }
     
