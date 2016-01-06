@@ -12,6 +12,8 @@ import XCTest
 
 class UIEdgeInsetsTests: XCTestCase {
     
+    // MARK: init
+    
     func testInitHorizontal() {
         let inset = UIEdgeInsets(horizontal: 10.0)
         XCTAssertEqual(inset.top, 0.0)

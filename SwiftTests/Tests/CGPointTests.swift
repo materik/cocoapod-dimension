@@ -12,6 +12,8 @@ import XCTest
 
 class CGPointTests: XCTestCase {
     
+    // MARK: init
+    
     func testInitSquared() {
         XCTAssertEqual(CGPoint(squared: 10.0).x, 10.0)
         XCTAssertEqual(CGPoint(squared: 10.0).y, 10.0)
@@ -34,6 +36,8 @@ class CGPointTests: XCTestCase {
         XCTAssertEqual(CGPoint(size: CGSize(width: 10.0, height: 20.0)).x, 10.0)
         XCTAssertEqual(CGPoint(size: CGSize(width: 10.0, height: 20.0)).y, 20.0)
     }
+    
+    // MARK: operation
     
     func testAddition() {
         XCTAssertEqual(CGPoint(x: 10.0) + CGPoint(x: 10.0), CGPoint(x: 20.0, y: 0.0))

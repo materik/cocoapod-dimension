@@ -12,6 +12,8 @@ import XCTest
 
 class UIImageViewTests: XCTestCase {
     
+    // MARK: setWidthAndKeepImageRatio
+    
     func testSetWidthAndKeepImageRatio() {
         let image = UIImage.testImage(named: "test")
         let view = UIImageView(image: image)
@@ -30,6 +32,8 @@ class UIImageViewTests: XCTestCase {
         XCTAssertEqual(view.w, 0.0)
         XCTAssertEqual(view.h, 0.0)
     }
+    
+    // MARK: setHeightAndKeepImageRatio
     
     func testSetHeightAndKeepImageRatio() {
         let image = UIImage.testImage(named: "test")
