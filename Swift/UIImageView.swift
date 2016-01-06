@@ -10,6 +10,8 @@ import UIKit
 
 public extension UIImageView {
     
+    // MARK: setter
+    
     func setWidth(andKeepImageRatio width: CGFloat) {
         if let image = self.image {
             self.width = width

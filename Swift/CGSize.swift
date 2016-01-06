@@ -8,10 +8,9 @@
 
 import UIKit
 
-// TODO(materik):
-// * needs tests
-
 public extension CGSize {
+    
+    // MARK: properies
     
     var w: CGFloat {
         get { return self.width }
@@ -22,6 +21,8 @@ public extension CGSize {
         set { self.height = newValue }
     }
     var center: CGPoint { return 0.5 * CGPoint(size: self) }
+    
+    // MARK: init
     
     init(squared: CGFloat) {
         self.init(width: squared, height: squared)
@@ -48,6 +49,8 @@ public extension CGSize {
     }
     
 }
+
+// MARK: operations
 
 public func *(scalar: CGFloat, size: CGSize) -> CGSize {
     return CGSize(width: scalar * size.width, height: scalar * size.height)

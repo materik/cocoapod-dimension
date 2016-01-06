@@ -10,6 +10,8 @@ import UIKit
 
 public extension UIView {
 
+    // MARK: properties
+    
     var x: CGFloat {
         set { self.frame.x = newValue }
         get { return self.frame.x }
@@ -62,7 +64,7 @@ public extension UIView {
         get { return self.frame.size }
     }
     
-    // -
+    // MARK: init
     
     convenience init(origin: CGPoint) {
         self.init(frame: CGRect(origin: origin))

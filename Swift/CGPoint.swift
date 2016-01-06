@@ -8,10 +8,9 @@
 
 import UIKit
 
-// TODO(materik):
-// * needs tests
-
 public extension CGPoint {
+    
+    // MARK: init
     
     init(squared: CGFloat) {
         self.init(x: squared, y: squared)
@@ -30,6 +29,8 @@ public extension CGPoint {
     }
     
 }
+
+// MARK: operations
 
 public func *(scalar: CGFloat, pnt: CGPoint) -> CGPoint {
     return CGPoint(x: scalar * pnt.x, y: scalar * pnt.y)
