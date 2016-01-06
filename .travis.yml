@@ -9,7 +9,12 @@ before_install:
 install:
   - cd SwiftTests && pod install && cd ..
   - cd ObjCTests && pod install && cd ..
+env:
+  - TEST_SUITE=SwiftTests
+  - TEST_SUITE=ObjCTests
 script:
-  - xctool -sdk iphonesimulator -workspace SwiftTests/SwiftTests.xcworkspace -scheme Tests clean build-tests run-tests
-  - xctool -configuration Debug -sdk iphonesimulator -workspace ObjCTests/ObjCTests.xcworkspace -scheme Tests build-tests
-  - xctool -workspace ObjCTests/ObjCTests.xcworkspace -scheme Tests run-tests -test-sdk iphonesimulator9.0
+  - xctool
+    -workspace ${TEST_SUITE}/${TEST_SUITE}.xcworkspace
+    -scheme Tests
+    -sdk iphonesimulator9.0
+    clean build-tests run-tests
