@@ -15,6 +15,7 @@
 		C17C4EDD1C3D4E8200E7FF4B /* CGSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C4EDC1C3D4E8200E7FF4B /* CGSizeTests.swift */; };
 		C17C4EDF1C3D4E9100E7FF4B /* CGRectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C4EDE1C3D4E9100E7FF4B /* CGRectTests.swift */; };
 		C17C4EE11C3D4EA700E7FF4B /* UIImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C4EE01C3D4EA700E7FF4B /* UIImageViewTests.swift */; };
+		C17C4EE31C3D4F2400E7FF4B /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = C17C4EE21C3D4F2400E7FF4B /* test.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C17C4EDC1C3D4E8200E7FF4B /* CGSizeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeTests.swift; sourceTree = "<group>"; };
 		C17C4EDE1C3D4E9100E7FF4B /* CGRectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectTests.swift; sourceTree = "<group>"; };
 		C17C4EE01C3D4EA700E7FF4B /* UIImageViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewTests.swift; sourceTree = "<group>"; };
+		C17C4EE21C3D4F2400E7FF4B /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		E13FD9A38FA7666B9CC1FAC6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69F2EB2F875F9C5A0BCA16B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 				C134CB891C3CB6D300215143 /* UIScreenTests.swift */,
 				C17C4EE01C3D4EA700E7FF4B /* UIImageViewTests.swift */,
 				C134CB8A1C3CB6D300215143 /* UIViewTests.swift */,
+				C17C4EE21C3D4F2400E7FF4B /* test.png */,
 				C134CB831C3CB65600215143 /* Info.plist */,
 			);
 			path = Tests;
@@ -153,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C17C4EE31C3D4F2400E7FF4B /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
