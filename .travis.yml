@@ -8,8 +8,8 @@ before_install:
   - brew update
 install:
   - cd SwiftTests && pod install && cd ..
-  - cd DemoObjC && pod install && cd ..
+  - cd ObjCTests && pod install && cd ..
 script:
   - xctool -sdk iphonesimulator -workspace SwiftTests/SwiftTests.xcworkspace -scheme Tests clean build-tests run-tests
-  - xctool -configuration Debug -sdk iphonesimulator -workspace DemoObjC/Demo.xcworkspace -scheme Demo build-tests
-  - xctool -workspace DemoObjC/Demo.xcworkspace -scheme Demo run-tests -test-sdk iphonesimulator9.0
+  - xctool -configuration Debug -sdk iphonesimulator -workspace ObjCTests/ObjCTests.xcworkspace -scheme Tests build-tests
+  - xctool -workspace ObjCTests/ObjCTests.xcworkspace -scheme Tests run-tests -test-sdk iphonesimulator9.0
