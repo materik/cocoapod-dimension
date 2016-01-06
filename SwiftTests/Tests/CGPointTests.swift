@@ -30,6 +30,11 @@ class CGPointTests: XCTestCase {
         XCTAssertEqual(CGPoint(y: 10.0), CGPoint(x: 0.0, y: 10.0))
     }
     
+    func testInitSize() {
+        XCTAssertEqual(CGPoint(size: CGSize(width: 10.0, height: 20.0)).x, 10.0)
+        XCTAssertEqual(CGPoint(size: CGSize(width: 10.0, height: 20.0)).y, 20.0)
+    }
+    
     func testAddition() {
         XCTAssertEqual(CGPoint(x: 10.0) + CGPoint(x: 10.0), CGPoint(x: 20.0, y: 0.0))
         XCTAssertEqual(CGPoint(y: 10.0) + CGPoint(y: 10.0), CGPoint(x: 0.0, y: 20.0))
@@ -52,6 +57,12 @@ class CGPointTests: XCTestCase {
         XCTAssertEqual(CGPoint(x: 10.0) + CGSize(w: 10.0), CGPoint(x: 20.0, y: 0.0))
         XCTAssertEqual(CGPoint(y: 10.0) + CGSize(h: 10.0), CGPoint(x: 0.0, y: 20.0))
         XCTAssertEqual(CGPoint(x: 10.0) + CGSize(h: 10.0), CGPoint(x: 10.0, y: 10.0))
+    }
+    
+    func testSubtractionSize() {
+        XCTAssertEqual(CGPoint(x: 10.0) - CGSize(w: 10.0), CGPoint(x: 0.0, y: 0.0))
+        XCTAssertEqual(CGPoint(y: 10.0) - CGSize(h: 10.0), CGPoint(x: 0.0, y: 0.0))
+        XCTAssertEqual(CGPoint(x: 10.0) - CGSize(h: 10.0), CGPoint(x: 10.0, y: -10.0))
     }
     
 }

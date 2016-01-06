@@ -38,8 +38,6 @@ init(x: CGFloat)
 init(y: CGFloat)
 init(size: CGSize)
 
-func exists(inFrame frame: CGRect) -> Bool
-
 func *(scalar: CGFloat, pnt: CGPoint) -> CGPoint
 func +(pnt1: CGPoint, pnt2: CGPoint) -> CGPoint
 func -(pnt1: CGPoint, pnt2: CGPoint) -> CGPoint

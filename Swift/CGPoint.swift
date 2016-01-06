@@ -29,11 +29,6 @@ public extension CGPoint {
         self.init(x: size.w, y: size.h)
     }
     
-    func exists(inFrame frame: CGRect) -> Bool {
-        return (self.x >= frame.origin.x && self.x <= (frame.origin.x + frame.size.width) &&
-            self.y >= frame.origin.y && self.y <= (frame.origin.y + frame.size.height))
-    }
-    
 }
 
 public func *(scalar: CGFloat, pnt: CGPoint) -> CGPoint {
