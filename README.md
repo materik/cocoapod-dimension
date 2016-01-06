@@ -52,8 +52,6 @@ var x: CGFloat { get set }
 var y: CGFloat { get set }
 var w: CGFloat { get set }
 var h: CGFloat { get set }
-var width: CGFloat { get set }
-var height: CGFloat { get set }
 var top: CGFloat { get set }
 var right: CGFloat { get set }
 var bottom: CGFloat { get set }
@@ -127,8 +125,6 @@ init(vertical: CGFloat, right: CGFloat)
 func *(scalar: CGFloat, inset: UIEdgeInsets) -> UIEdgeInsets
 func +(inset1: UIEdgeInsets, inset2: UIEdgeInsets) -> UIEdgeInsets
 func -(inset1: UIEdgeInsets, inset2: UIEdgeInsets) -> UIEdgeInsets
-func +(frame: CGRect, inset: UIEdgeInsets) -> CGRect
-func -(frame: CGRect, inset: UIEdgeInsets) -> CGRect
 ```
 
 ### UIImageView
