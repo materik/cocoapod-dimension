@@ -17,17 +17,13 @@ class UIScreenTests: XCTestCase {
     func testGetWidth() {
         let mainScreen = UIScreen.mainScreen()
         XCTAssertEqual(mainScreen.bounds.size.width, mainScreen.width)
-        XCTAssertEqual(mainScreen.width, 320)
         XCTAssertEqual(mainScreen.bounds.size.width, UIScreen.width)
-        XCTAssertEqual(UIScreen.width, 320)
     }
     
     func testGetW() {
         let mainScreen = UIScreen.mainScreen()
         XCTAssertEqual(mainScreen.bounds.size.width, mainScreen.w)
-        XCTAssertEqual(mainScreen.w, 320)
         XCTAssertEqual(mainScreen.bounds.size.width, UIScreen.w)
-        XCTAssertEqual(UIScreen.w, 320)
     }
 
     // MARK: height
@@ -35,33 +31,31 @@ class UIScreenTests: XCTestCase {
     func testGetHeight() {
         let mainScreen = UIScreen.mainScreen()
         XCTAssertEqual(mainScreen.bounds.size.height, mainScreen.height)
-        XCTAssertEqual(mainScreen.height, 480)
         XCTAssertEqual(mainScreen.bounds.size.height, UIScreen.height)
-        XCTAssertEqual(UIScreen.height, 480)
     }
     
     func testGetH() {
         let mainScreen = UIScreen.mainScreen()
         XCTAssertEqual(mainScreen.bounds.size.height, mainScreen.h)
-        XCTAssertEqual(mainScreen.h, 480)
         XCTAssertEqual(mainScreen.bounds.size.height, UIScreen.h)
-        XCTAssertEqual(UIScreen.h, 480)
     }
 
     // MARK: size
 
     func testGetSize() {
         let mainScreen = UIScreen.mainScreen()
-        XCTAssertEqual(mainScreen.size, CGSize(width: 320, height: 480))
-        XCTAssertEqual(UIScreen.size, CGSize(width: 320, height: 480))
+        XCTAssertEqual(mainScreen.bounds.size, mainScreen.size)
+        XCTAssertEqual(mainScreen.bounds.size, UIScreen.size)
     }
     
     // MARK: center
     
     func testGetCenter() {
         let mainScreen = UIScreen.mainScreen()
-        XCTAssertEqual(mainScreen.center, CGPoint(x: 160, y: 240))
-        XCTAssertEqual(UIScreen.center, CGPoint(x: 160, y: 240))
+        let center = CGPoint(x: mainScreen.bounds.size.width / 2.0,
+                             y: mainScreen.bounds.size.height / 2.0);
+        XCTAssertEqual(mainScreen.center, center)
+        XCTAssertEqual(UIScreen.center, center)
     }
 
 }
