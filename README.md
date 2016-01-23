@@ -134,6 +134,13 @@ func setWidth(andKeepImageRatio width: CGFloat)
 func setHeight(andKeepImageRatio height: CGFloat)
 ```
 
+### UILabel
+
+```swift
+func sizeToFit(width width: CGFloat)
+func setLineSpacing(lineSpacing: CGFloat)
+```
+
 ### UIScreen
 
 ```swift
