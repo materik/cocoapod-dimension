@@ -98,6 +98,7 @@ func -(size1: CGSize, size2: CGSize) -> CGSize
 ### UIEdgeInsets
 
 ```swift
+init(squared: CGFloat)
 init(top: CGFloat)
 init(left: CGFloat)
 init(bottom: CGFloat)

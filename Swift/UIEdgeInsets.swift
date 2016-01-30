@@ -10,6 +10,10 @@ import UIKit
 
 public extension UIEdgeInsets {
     
+    init(squared: CGFloat) {
+        self.init(top: squared, left: squared, bottom: squared, right: squared)
+    }
+    
     init(top: CGFloat) {
         self.init(top: top, left: 0.0, bottom: 0.0, right: 0.0)
     }

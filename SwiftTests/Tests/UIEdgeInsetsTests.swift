@@ -14,6 +14,14 @@ class UIEdgeInsetsTests: XCTestCase {
     
     // MARK: init
     
+    func testInitSquared() {
+        let inset = UIEdgeInsets(squared: 10.0)
+        XCTAssertEqual(inset.top, 10.0)
+        XCTAssertEqual(inset.left, 10.0)
+        XCTAssertEqual(inset.bottom, 10.0)
+        XCTAssertEqual(inset.right, 10.0)
+    }
+    
     func testInitTop() {
         let inset = UIEdgeInsets(top: 10.0)
         XCTAssertEqual(inset.top, 10.0)
