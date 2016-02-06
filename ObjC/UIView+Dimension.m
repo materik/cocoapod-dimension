@@ -87,4 +87,10 @@
   [self setFrame:CGRectMake(self.x, self.y, size.width, size.height)];
 }
 
+- (void)centerInView {
+  UIView *view = self.superview;
+  [self setCenter:CGPointMake(view.center.x - view.origin.x,
+                              view.center.y - view.origin.y)];
+}
+
 @end

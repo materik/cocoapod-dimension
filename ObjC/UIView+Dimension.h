@@ -39,4 +39,6 @@
 - (CGSize)size;
 - (void)setSize:(CGSize)size;
 
+- (void)centerInView;
+
 @end
