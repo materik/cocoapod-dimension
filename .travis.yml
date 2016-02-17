@@ -6,9 +6,13 @@ branches:
 before_install:
   - export LANG=en_US.UTF-8
   - brew update
+  - gem install specific_install
+  - gem specific_install -l https://github.com/venmo/slather.git
 install:
   - cd SwiftTests && pod install && cd ..
   - cd ObjCTests && pod install && cd ..
+after_success:
+  - cd $TRAVIS_BUILD_DIR && slather
 env:
   - TEST_SUITE=SwiftTests
   - TEST_SUITE=ObjCTests

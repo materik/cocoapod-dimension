@@ -3,6 +3,7 @@
 [![](https://img.shields.io/badge/contact-@thematerik-blue.svg?style=flat-square)](http://twitter.com/thematerik)
 [![](https://img.shields.io/cocoapods/v/Dimension.svg?style=flat-square)](https://cocoapods.org/pods/Dimension)
 [![](https://img.shields.io/travis/materik/dimension.svg?style=flat-square)](https://travis-ci.org/materik/dimension)
+[![](https://coveralls.io/repos/github/materik/dimension/badge.svg?branch=master)](https://coveralls.io/github/materik/dimension?branch=master)
 ![](https://img.shields.io/cocoapods/p/Dimension.svg?style=flat-square)
 ![](https://img.shields.io/cocoapods/l/Dimension.svg?style=flat-square)
 
