@@ -184,6 +184,12 @@ init(size: CGSize)
 
 ## Objective-C
 
+### UILabel
+
+```objective-c
+- (void)sizeToFitWidth:(CGFloat)width;
+```
+
 ### UIImageView
 
 ```objective-c
@@ -222,5 +228,6 @@ init(size: CGSize)
 @property(assign) CGFloat left;
 @property(assign) CGPoint origin;
 @property(assign) CGSize size;
-```
 
+- (void)centerInView;
+```
