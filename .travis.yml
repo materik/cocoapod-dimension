@@ -1,11 +1,12 @@
 language: objective-c
-osx_image: xcode7
+osx_image: xcode8
 branches:
   only:
     - master
 before_install:
   - export LANG=en_US.UTF-8
   - brew update
+  - gem install cocoapods --pre
   - gem install specific_install
   - gem specific_install -l https://github.com/venmo/slather.git
 install:
@@ -14,11 +15,17 @@ install:
 after_success:
   - cd $TRAVIS_BUILD_DIR && slather
 env:
-  - TEST_SUITE=SwiftTests
-  - TEST_SUITE=ObjCTests
+  global:
+    - DESTINATION="platform=iOS Simulator,name=iPhone 7,OS=10.0"
+    - IOS_SDK="iphonesimulator10.0"
+    - SCHEME="Tests"
+  matrix:
+    - TEST_SUITE="SwiftTests"
+    - TEST_SUITE="ObjCTests"
 script:
-  - xctool
-    -workspace ${TEST_SUITE}/${TEST_SUITE}.xcworkspace
-    -scheme Tests
-    -sdk iphonesimulator9.0
-    clean build-tests run-tests
+  - xcodebuild
+    -workspace "${TEST_SUITE}/${TEST_SUITE}.xcworkspace"
+    -scheme "${SCHEME}"
+    -sdk "${IOS_SDK}"
+    -destination "${DESTINATION}"
+    clean build test | xcpretty -c
