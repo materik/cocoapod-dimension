@@ -21,11 +21,11 @@ public extension UIScreen {
     
     // MARK: static
     
-    class var w: CGFloat { return UIScreen.mainScreen().w }
-    class var h: CGFloat { return UIScreen.mainScreen().h }
-    class var width: CGFloat { return UIScreen.mainScreen().width }
-    class var height: CGFloat { return UIScreen.mainScreen().height }
-    class var size: CGSize { return UIScreen.mainScreen().size }
-    class var center: CGPoint { return UIScreen.mainScreen().center }
+    class var w: CGFloat { return UIScreen.main.w }
+    class var h: CGFloat { return UIScreen.main.h }
+    class var width: CGFloat { return UIScreen.main.width }
+    class var height: CGFloat { return UIScreen.main.height }
+    class var size: CGSize { return UIScreen.main.size }
+    class var center: CGPoint { return UIScreen.main.center }
     
 }

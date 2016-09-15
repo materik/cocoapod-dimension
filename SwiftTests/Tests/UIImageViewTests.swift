@@ -58,9 +58,9 @@ class UIImageViewTests: XCTestCase {
 
 extension UIImage {
     
-    static func testImage(named named: String) -> UIImage? {
-        let bundle = NSBundle(forClass: UIImageViewTests.self)
-        return UIImage(named: named, inBundle: bundle, compatibleWithTraitCollection: nil)
+    static func testImage(named: String) -> UIImage? {
+        let bundle = Bundle(for: UIImageViewTests.self)
+        return UIImage(named: named, in: bundle, compatibleWith: nil)
     }
     
 }

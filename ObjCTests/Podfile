@@ -1,4 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 
-pod 'Dimension/ObjC', :path => '..'
+target 'Tests' do
+    pod 'Dimension/ObjC', :path => '..'
+end
+

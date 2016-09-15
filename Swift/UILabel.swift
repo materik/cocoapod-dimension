@@ -11,8 +11,8 @@ import UIKit
 public extension UILabel {
     
     // TODO: need tests
-    func sizeToFit(width width: CGFloat) {
-        let size = CGSize(w: width, h: CGFloat.max)
+    func sizeToFit(width: CGFloat) {
+        let size = CGSize(w: width, h: CGFloat.greatestFiniteMagnitude)
         if let size = self.attributedText?.getSizeThatFits(size: size) {
             self.size = CGSize(w: width, h: size.height)
         }
@@ -21,7 +21,7 @@ public extension UILabel {
     // TODO: need tests
     func setLineSpacing(lineSpacing: CGFloat) {
         if let attributedText = self.attributedText?.mutableCopy() as? NSMutableAttributedString {
-            attributedText.setLineSpacing(lineSpacing, alignment: self.textAlignment)
+            attributedText.setLineSpacing(lineSpacing: lineSpacing, alignment: self.textAlignment)
             self.attributedText = attributedText
         }
     }
@@ -30,15 +30,15 @@ public extension UILabel {
 
 private extension NSAttributedString {
     
-    func getSizeThatFits(size size: CGSize) -> CGSize {
+    func getSizeThatFits(size: CGSize) -> CGSize {
         let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineBreakMode = .ByWordWrapping
+        paragraphStyle.lineBreakMode = .byWordWrapping
         
         let copy = self.mutableCopy() as! NSMutableAttributedString
-        let frame = copy.boundingRectWithSize(size, options: [
-            .TruncatesLastVisibleLine,
-            .UsesLineFragmentOrigin
-            ], context: nil)
+        let frame = copy.boundingRect(with: size, options: [
+            .truncatesLastVisibleLine,
+            .usesLineFragmentOrigin
+        ], context: nil)
         
         return frame.size
     }
@@ -49,7 +49,7 @@ private extension NSAttributedString {
 private extension NSMutableAttributedString {
     
     func setLineSpacing(lineSpacing: CGFloat, alignment: NSTextAlignment? = nil) {
-        let copy = NSAttributedString(string: "A", attributes: self.attributesAtIndex(0, effectiveRange: nil))
+        let copy = NSAttributedString(string: "A", attributes: self.attributes(at: 0, effectiveRange: nil))
         let size = copy.getSizeThatFits(size: CGSize())
         let lineHeight = size.height
         
@@ -57,7 +57,7 @@ private extension NSMutableAttributedString {
         paragraphStyle.maximumLineHeight = lineHeight / 2.0 + lineSpacing
         paragraphStyle.minimumLineHeight = paragraphStyle.maximumLineHeight
         paragraphStyle.lineSpacing = 0.0
-        paragraphStyle.lineBreakMode = .ByWordWrapping
+        paragraphStyle.lineBreakMode = .byWordWrapping
         self.addAttribute(NSParagraphStyleAttributeName,
             value: paragraphStyle,
             range: self.string.fullRange)

@@ -193,7 +193,7 @@ class UIViewTests: XCTestCase {
     func testGetOrigin() {
         let view1 = UIView()
         XCTAssertEqual(view1.frame.origin, view1.origin)
-        XCTAssertEqual(view1.origin, CGPointZero)
+        XCTAssertEqual(view1.origin, CGPoint())
         let view2 = UIView(frame: CGRect(x: 10, y: 0, width: 0, height: 0))
         XCTAssertEqual(view2.frame.origin, view2.origin)
         XCTAssertEqual(view2.origin, CGPoint(x: 10, y: 0))
@@ -211,7 +211,7 @@ class UIViewTests: XCTestCase {
     func testGetSize() {
         let view1 = UIView()
         XCTAssertEqual(view1.frame.size, view1.size)
-        XCTAssertEqual(view1.size, CGSizeZero)
+        XCTAssertEqual(view1.size, CGSize())
         let view2 = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
         XCTAssertEqual(view2.frame.size, view2.size)
         XCTAssertEqual(view2.size, CGSize(width: 10, height: 0))
