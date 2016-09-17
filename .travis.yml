@@ -10,10 +10,9 @@ before_install:
   - gem install specific_install
   - gem specific_install -l https://github.com/venmo/slather.git
 install:
-  - cd SwiftTests && pod install && cd ..
-  - cd ObjCTests && pod install && cd ..
+  - cd ${TEST_SUITE} && pod install && cd ..
 after_success:
-  - cd $TRAVIS_BUILD_DIR && slather
+  - cd ${TRAVIS_BUILD_DIR} && slather
 env:
   global:
     - DESTINATION="platform=iOS Simulator,name=iPhone 7,OS=10.0"
